@@ -14,9 +14,6 @@ fi
 mkdir root
 /pkg/main/azusa.symlinks.core/azusa/makeroot.sh root
 
-# copy tini
-cp -aTv /pkg/main/sys-process.tini.core/bin/tini-static root/usr/azusa/tini
-
 # copy entrypoint
 cp docker-entrypoint.sh root/usr/azusa
 chmod +x root/usr/azusa/docker-entrypoint.sh
