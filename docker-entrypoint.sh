@@ -9,7 +9,7 @@ COUNT=0
 # wait for mount to happen
 while [ ! -f /pkg/main/sys-process.tini.core/bin/tini-static ]; do
 	COUNT=$(( $COUNT + 1 ))
-	if [ $COUNT -gt 10 ]; then
+	if [ $COUNT -gt 20 ]; then
 		echo "Timeout starting to run apkg, giving up"
 		echo "apkg's log may be helpful:"
 		cat /var/log/apkg.log
